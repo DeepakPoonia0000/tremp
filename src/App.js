@@ -11,48 +11,48 @@ import image3 from './assets/trempthree.jpg'
 function App() {
   const productList = [
     {
-      name: 'Joggers',
+      name: 'jeans',
       items: [
         {
-          name: 'Casual Joggers',
-          description: 'Comfortable and stylish joggers for everyday wear.',
+          name: 'Casual jeans',
+          description: 'Comfortable and stylish jeans for everyday wear.',
           image: image1,
           price: 380.80
         },
         {
-          name: 'Sport Joggers',
-          description: 'Perfect joggers for sports and fitness activities.',
+          name: 'Sport jeans',
+          description: 'Perfect jeans for sports and fitness activities.',
           image: image2,
           price: 480.80
         },
         {
-          name: 'Sport Joggers',
-          description: 'Perfect joggers for sports and fitness activities.',
+          name: 'Sport jeans',
+          description: 'Perfect jeans for sports and fitness activities.',
           image: image2,
           price: 480.80
         },
         {
-          name: 'Casual Joggers',
-          description: 'Comfortable and stylish joggers for everyday wear.',
+          name: 'Casual jeans',
+          description: 'Comfortable and stylish jeans for everyday wear.',
           image: image1,
           price: 380.80
         },
         {
-          name: 'Sport Joggers',
-          description: 'Perfect joggers for sports and fitness activities.',
+          name: 'Sport jeans',
+          description: 'Perfect jeans for sports and fitness activities.',
           image: image2,
           price: 480.80
         },
         {
-          name: 'Sport Joggers',
-          description: 'Perfect joggers for sports and fitness activities.',
+          name: 'Sport jeans',
+          description: 'Perfect jeans for sports and fitness activities.',
           image: image2,
           price: 480.80
         }
       ]
     },
     {
-      name: 'Tight Jeans',
+      name: 'Everyday Jeans',
       items: [
         {
           name: 'Skinny Fit Jeans',
@@ -67,8 +67,8 @@ function App() {
           price: 680.80
         },
         {
-          name: 'Sport Joggers',
-          description: 'Perfect joggers for sports and fitness activities.',
+          name: 'Sport jeans',
+          description: 'Perfect jeans for sports and fitness activities.',
           image: image2,
           price: 480.80
         },
@@ -85,8 +85,8 @@ function App() {
           price: 680.80
         },
         {
-          name: 'Sport Joggers',
-          description: 'Perfect joggers for sports and fitness activities.',
+          name: 'Sport jeans',
+          description: 'Perfect jeans for sports and fitness activities.',
           image: image2,
           price: 480.80
         }
