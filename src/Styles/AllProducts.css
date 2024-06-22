@@ -1,0 +1,38 @@
+.all-products {
+    padding: 20px;
+  }
+  
+  .category {
+    margin-bottom: 40px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .product-card {
+    border: 0px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .product-image {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 0px solid #ddd;
+    margin-bottom: 15px;
+  }
+  
+  .product-price {
+    color: #ff4500;
+    font-weight: bold;
+  }
+  
+  @media (min-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
