@@ -13,6 +13,7 @@ const AllProducts = ({ productList }) => {
                       <img src={product.image} alt={product.name} className="product-image"/>
                       <h3>{product.name}</h3>
                       <p>{product.description}</p>
+                      <p className="product-price"><s>₹1200 </s></p>
                       <p className="product-price">₹{product.price}</p>
                     </div>
                   ))}

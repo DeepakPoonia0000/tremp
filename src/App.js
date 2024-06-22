@@ -17,37 +17,37 @@ function App() {
           name: 'Casual Joggers',
           description: 'Comfortable and stylish joggers for everyday wear.',
           image: image1,
-          price: 39.99
+          price: 380.80
         },
         {
           name: 'Sport Joggers',
           description: 'Perfect joggers for sports and fitness activities.',
           image: image2,
-          price: 49.99
+          price: 480.80
         },
         {
           name: 'Sport Joggers',
           description: 'Perfect joggers for sports and fitness activities.',
           image: image2,
-          price: 49.99
+          price: 480.80
         },
         {
           name: 'Casual Joggers',
           description: 'Comfortable and stylish joggers for everyday wear.',
           image: image1,
-          price: 39.99
+          price: 380.80
         },
         {
           name: 'Sport Joggers',
           description: 'Perfect joggers for sports and fitness activities.',
           image: image2,
-          price: 49.99
+          price: 480.80
         },
         {
           name: 'Sport Joggers',
           description: 'Perfect joggers for sports and fitness activities.',
           image: image2,
-          price: 49.99
+          price: 480.80
         }
       ]
     },
@@ -58,37 +58,37 @@ function App() {
           name: 'Skinny Fit Jeans',
           description: 'Trendy skinny fit jeans with a snug fit.',
           image: image1,
-          price: 59.99
+          price: 580.80
         },
         {
           name: 'High Waist Jeans',
           description: 'High waist jeans with a flattering fit.',
           image: image2,
-          price: 69.99
+          price: 680.80
         },
         {
           name: 'Sport Joggers',
           description: 'Perfect joggers for sports and fitness activities.',
           image: image2,
-          price: 49.99
+          price: 480.80
         },
         {
           name: 'Skinny Fit Jeans',
           description: 'Trendy skinny fit jeans with a snug fit.',
           image: image1,
-          price: 59.99
+          price: 580.80
         },
         {
           name: 'High Waist Jeans',
           description: 'High waist jeans with a flattering fit.',
           image: image2,
-          price: 69.99
+          price: 680.80
         },
         {
           name: 'Sport Joggers',
           description: 'Perfect joggers for sports and fitness activities.',
           image: image2,
-          price: 49.99
+          price: 480.80
         }
       ]
     }
