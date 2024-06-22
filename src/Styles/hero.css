@@ -1,0 +1,45 @@
+.shop-btn{
+    color: black;
+    /* background: transparent; */
+    background: white;
+    border: 1px;
+    padding: 0.5%;
+    font-size: x-large;
+    width: 100%;
+}
+
+.hero-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.displ-none{
+    display: block;
+    @media (max-width:450px) {
+        display: none;
+    }
+}
+
+.displ-vis{
+    display: none;
+    @media (max-width:450px) {
+        display: block;
+    }
+}
+
+.img-div{
+    width: 100%;
+
+}
+
+.img-div img{
+    width: 100%;
+}
+
+.centering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
