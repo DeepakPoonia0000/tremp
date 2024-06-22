@@ -73,3 +73,21 @@ li:hover {
 .company{
   font-size: xxx-large;
 }
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(2.5);
+    opacity: 0;
+    font-size: 300px;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    font-size: xxx-large;
+    
+  }
+}
+
+.zoom-out {
+  animation: zoomOut 2s ease-out;
+}

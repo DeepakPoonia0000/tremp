@@ -21,7 +21,7 @@ const NavBar = () => {
           />
         </div>
         <div className='company'>
-          <span>TREMP</span>
+          <span className='zoom-out'>TREMP</span>
         </div>
         <div className='options' style={{ color: "white" }}>
           <svg className="icon icon-cart-empty" style={{ width: "3rem" }} aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
