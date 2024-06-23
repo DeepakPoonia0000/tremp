@@ -8,6 +8,10 @@ import image1 from './assets/trempone.jpg'
 import image2 from './assets/tremptwo.jpg'
 import image3 from './assets/trempthree.jpg'
 
+import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
+import WhatsAppLink from './components/WhatsAppLink';
+
 function App() {
   const productList = [
     {
@@ -93,16 +97,24 @@ function App() {
       ]
     }
   ];
+
+  const phoneNumber = '9588747970'; 
+  const message = 'Hello!';
   
   return (
-
-    <div className="App" style={{ background: "", width: "100%" }}>
-      <Announcements />
-      <NavBar/>
-      <Hero />
-      <AllProducts productList={productList} />
-      <Fotter />
-
+    <div className="App">
+      <Router>
+        <Announcements />
+        <NavBar />
+        <Hero />
+        <Link to="/allProducts"><button className='shop-btn'>Shop Now</button></Link>
+        <WhatsAppLink phoneNumber={phoneNumber} message={message} />
+        <Routes>
+          <Route path="/allProducts" element={<AllProducts productList={productList} />} />
+          {/* Define other routes here if needed */}
+        </Routes>
+        <Fotter />
+      </Router>
     </div>
   );
 }
