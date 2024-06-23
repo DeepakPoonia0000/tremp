@@ -7,6 +7,7 @@ import NavBar from './components/NavBar';
 import image1 from './assets/trempone.jpg'
 import image2 from './assets/tremptwo.jpg'
 import image3 from './assets/trempthree.jpg'
+import WhatsApp from './assets/icons8-whatsapp-50.png'
 
 import { Link } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
@@ -98,11 +99,11 @@ function App() {
     }
   ];
 
-  const phoneNumber = '9588747970'; 
+  const phoneNumber = '7357177777'; 
   const message = 'Hello!';
   
   return (
-    <div className="App">
+    <div className="App" style={{textAlign:"center"}}>
       <Router>
         <Announcements />
         <NavBar />
