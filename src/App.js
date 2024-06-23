@@ -101,6 +101,8 @@ function App() {
 
   const phoneNumber = '7357177777'; 
   const message = 'Hello!';
+  const amount = 500;
+  const upiId = '9466441441@axl';
   
   return (
     <div className="App" style={{textAlign:"center"}}>
@@ -109,7 +111,7 @@ function App() {
         <NavBar />
         <Hero />
         <Link to="/allProducts"><button className='shop-btn'>Shop Now</button></Link>
-        <WhatsAppLink phoneNumber={phoneNumber} message={message} />
+        <WhatsAppLink phoneNumber={phoneNumber} message={message} amount={amount} upiId={upiId}/>
         <Routes>
           <Route path="/allProducts" element={<AllProducts productList={productList} />} />
           {/* Define other routes here if needed */}
