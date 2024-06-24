@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Navbar.css'; // Optional: add your own CSS for styling
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +32,7 @@ const NavBar = () => {
       <div className={`navbar ${isOpen ? 'open' : ''}`} style={{ marginTop: "-20px" }}>
         <ul>
           <li>Home</li>
-          <li>Men</li>
+        <Link to="/men" >Men</Link>
           <li>Women</li>
           <li>Sale</li>
         </ul>
