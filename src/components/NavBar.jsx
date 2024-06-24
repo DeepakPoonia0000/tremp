@@ -34,7 +34,7 @@ const NavBar = () => {
           <li>Home</li>
           <li>Men</li>
           <li>Women</li>
-          <li>Sale</li>
+          <li>Children</li>
         </ul>
         <div className="links pos-bottom" style={{ background: "rgba(0, 0, 0, 0.04)", padding: "20px 0px 20px 20px" }}>
           <div style={{ display: "flex", gap: "10px", marginBottom: "20px" }}>
