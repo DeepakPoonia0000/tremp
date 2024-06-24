@@ -3,6 +3,7 @@ import Announcements from './components/Announcements';
 import Fotter from './components/Fotter';
 import Hero from './components/Hero';
 import NavBar from './components/NavBar';
+import './app.css'
 
 import image1 from './assets/productImages/trempone.jpg'
 import image2 from './assets/productImages/tremptwo.jpg'
@@ -105,7 +106,7 @@ function App() {
   
   return (
     <div className="App" style={{textAlign:"center"}}>
-      <Router>
+   
         <Announcements />
         <NavBar />
         <Hero />
@@ -115,7 +116,7 @@ function App() {
           <Route path="/allProducts" element={<AllProducts productList={productList} />} />
         </Routes>
         <Fotter />
-      </Router>
+    
     </div>
   );
 }

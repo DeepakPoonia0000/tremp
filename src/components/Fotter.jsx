@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../Styles/Footer.css';
+// import '../Styles/Footer.css';
 
 const Fotter = () => {
     const [openSection, setOpenSection] = useState(null);

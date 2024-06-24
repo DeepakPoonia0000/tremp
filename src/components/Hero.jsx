@@ -6,7 +6,7 @@ import secondImage from '../assets/Background/secondImage.webp'
 import joggers from '../assets/joggers.webp'
 import jeans from '../assets/men_jeans.webp'
 
-import '../Styles/hero.css'
+// import '../Styles/hero.css'
 
 const Hero = () => {
   return (

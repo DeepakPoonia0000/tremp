@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/AllProducts.css'; // Optional: Add your own CSS for styling
+// import '../Styles/AllProducts.css'; // Optional: Add your own CSS for styling
 
 const AllProducts = ({ productList }) => {
         return (
