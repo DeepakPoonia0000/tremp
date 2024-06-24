@@ -1,7 +1,8 @@
 import React from 'react';
-import firstImage from '../assets/firstImage.webp'
-import firstImage1 from '../assets/firstImage1.webp'
-import secondImage from '../assets/secondImage.webp'
+import firstImage from '../assets/Background/firstImage.webp'
+import firstImage1 from '../assets/Background/firstImage1.webp'
+import secondImage from '../assets/Background/secondImage.webp'
+
 import joggers from '../assets/joggers.webp'
 import jeans from '../assets/men_jeans.webp'
 

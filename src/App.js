@@ -4,10 +4,9 @@ import Fotter from './components/Fotter';
 import Hero from './components/Hero';
 import NavBar from './components/NavBar';
 
-import image1 from './assets/trempone.jpg'
-import image2 from './assets/tremptwo.jpg'
-import image3 from './assets/trempthree.jpg'
-import WhatsApp from './assets/icons8-whatsapp-50.png'
+import image1 from './assets/productImages/trempone.jpg'
+import image2 from './assets/productImages/tremptwo.jpg'
+import image3 from './assets/productImages/trempthree.jpg'
 
 import { Link } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
@@ -114,7 +113,6 @@ function App() {
         <WhatsAppLink phoneNumber={phoneNumber} message={message} amount={amount} upiId={upiId}/>
         <Routes>
           <Route path="/allProducts" element={<AllProducts productList={productList} />} />
-          {/* Define other routes here if needed */}
         </Routes>
         <Fotter />
       </Router>

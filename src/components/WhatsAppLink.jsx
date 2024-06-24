@@ -1,5 +1,5 @@
 import React from 'react';
-import whatsApp from '../assets/icons8-whatsapp-50.png'
+import whatsApp from '../assets/icons/icons8-whatsapp-50.png'
 
 const WhatsAppLink = ({ phoneNumber, message , amount , upiId }) => {
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
