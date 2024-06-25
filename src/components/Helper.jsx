@@ -104,7 +104,6 @@ export const Mendata = [
     des: "Men jean",
   },
   {
-    
     img: men1,
     price: "1250 RS",
     des: "Men jean",
