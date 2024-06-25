@@ -151,11 +151,6 @@ li:hover {
   width: 50px;
 } */
 
-.navLinks {
-  text-decoration: none;
-
-}
-
 .navLinks:active {
   color: black;
 }
