@@ -8,18 +8,20 @@ import HomePage from "./components/HomePage";
 import Men from "./components/Men";
 import PrivacyPolicy from "./components/Footer/PrivacyPolicy";
 import TermsAndServices from "./components/Footer/TermsAndServices";
+import Women from "./components/Women";
 
 function App() {
   return (
     <div className="App" style={{ textAlign: "center" }}>
       <Announcements />
       <NavBar />
-      <div></div>
+
       <Routes>
         <Route path="/" element={<HomePage />} />
 
         <Route path="/allProducts" element={<AllProducts />} />
         <Route path="/men" element={<Men />} />
+        <Route path="/women" element={<Women />} />
         <Route path="/privacyolicy" element={<PrivacyPolicy />} />
         <Route path="/termsandconditions" element={<TermsAndServices />} />
       </Routes>
