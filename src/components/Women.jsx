@@ -15,7 +15,7 @@ const Women = () => {
                 key={i}
               >
                 <img
-                  className="clothing_img w-100 ps-3 ps-sm-0"
+                  className="clothing_img  w-100 ps-3 ps-sm-0"
                   src={obj.img}
                   alt="womens "
                 />
