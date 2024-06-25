@@ -30,7 +30,7 @@ const Hero = () => {
           </div>
           <img src={secondImage} alt="" className='displ-vis' />
         </div>
-        <div style={{ width: "100%", display: "flex", justifyContent: "center" , marginTop:"50px" }}>
+        <div className='mb-3' style={{ width: "100%", display: "flex", justifyContent: "center" , marginTop:"50px" }}>
           <div className="product-grid">
             {instaFeed.map((product, idx) => (
               <div key={idx} className="product-card">

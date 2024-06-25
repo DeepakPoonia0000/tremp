@@ -1,4 +1,5 @@
 import image1 from "../assets/images/jpg/trempone.jpg";
+import image11 from "../assets/productImages/trempone.png";
 import image2 from "../assets/images/jpg/tremptwo.jpg";
 import men1 from "../assets/images/webp/men1.webp";
 
@@ -9,7 +10,7 @@ export const productListData = [
       {
         name: "Casual jeans",
         description: "Comfortable and stylish jeans for everyday wear.",
-        image: image1,
+        image: image11,
         price: 380.8,
       },
       {
@@ -50,7 +51,7 @@ export const productListData = [
       {
         name: "Skinny Fit Jeans",
         description: "Trendy skinny fit jeans with a snug fit.",
-        image: image1,
+        image: image11,
         price: 580.8,
       },
       {
@@ -89,7 +90,7 @@ export const productListData = [
 
 export const Mendata = [
   {
-    img: image1,
+    img: image11,
     price: "1200 RS",
     des: "Men jean",
   },
