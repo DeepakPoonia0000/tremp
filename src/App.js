@@ -15,8 +15,10 @@ function App() {
     <div className="App" style={{ textAlign: "center" }}>
       <Announcements />
       <NavBar />
+      <div></div>
       <Routes>
         <Route path="/" element={<HomePage />} />
+
         <Route path="/allProducts" element={<AllProducts />} />
         <Route path="/men" element={<Men />} />
       </Routes>
