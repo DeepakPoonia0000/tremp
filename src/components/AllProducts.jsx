@@ -1,5 +1,4 @@
 import React from 'react';
-// import '../Styles/AllProducts.css'; // Optional: Add your own CSS for styling
 
 const AllProducts = ({ productList }) => {
         return (
@@ -13,7 +12,7 @@ const AllProducts = ({ productList }) => {
                       <img src={product.image} alt={product.name} className="product-image"/>
                       <h3>{product.name}</h3>
                       <p>{product.description}</p>
-                      <p className="product-price" style={{color:"wheat"}}><s>₹1200 </s></p>
+                      <p className="product-price" style={{color:"wheat"}}><s>₹1209</s></p>
                       <p className="product-price">₹{product.price}</p>
                     </div>
                   ))}
