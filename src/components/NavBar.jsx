@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Styles/Navbar.css"; // Optional: add your own CSS for styling
+// import "../Styles/Navbar.css"; // Optional: add your own CSS for styling
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
@@ -10,6 +10,9 @@ const NavBar = () => {
   const toggleNav = () => {
     setIsOpen(!isOpen);
   };
+   const closeNav = () => {
+     setIsOpen(false);
+   };
   if (isOpen) {
     document.body.classList.add("overflow-hidden");
   } else {
@@ -51,7 +54,7 @@ const NavBar = () => {
         <ul className="ps-0 mb-0 text_start">
           <li className="navlink ps-3 py-3 ">Home</li>
           <li className="ps-3 py-3   navlink">
-            <Link className="text-black d-block" to="/men">
+            <Link onClick={closeNav} className="text-black d-block" to="/men">
               Men
             </Link>
           </li>
@@ -85,7 +88,7 @@ const NavBar = () => {
             <div style={{ marginTop: "10px" }}>Log in</div>
           </div>
           <div style={{ display: "flex", gap: "15px" }}>
-            <a href="" >
+            <a href="">
               {" "}
               <svg
                 aria-hidden="true"

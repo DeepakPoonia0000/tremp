@@ -78,3 +78,142 @@
         </div>
     </div>
 </div>
+
+
+
+
+const express = require('express');
+const bodyParser = require('body-parser');
+const Razorpay = require('razorpay');
+
+const app = express();
+const port = 3000; // Or any port of your choice
+const razorpay = new Razorpay({
+  key_id: 'YOUR_RAZORPAY_KEY_ID', // Replace with your actual Razorpay API key ID
+  key_secret: 'YOUR_RAZORPAY_KEY_SECRET' // Replace with your actual Razorpay API key secret
+});
+
+app.use(bodyParser.json());
+
+app.post('/process-bank-transfer', async (req, res) => {
+  const { amount, accountNumber, ifscCode } = req.body;
+
+  try {
+    // Create a Razorpay order
+    const orderResponse = await razorpay.orders.create({
+      amount: amount * 100, // Amount in paisa (multiply by 100 for rupees to paisa conversion)
+      currency: 'INR',
+      receipt: 'receipt_order_74394', // Replace with your receipt identifier
+      payment_capture: 1 // Auto-capture payments
+    });
+
+    // Initiate bank transfer using Razorpay
+    const transferResponse = await razorpay.payouts.create({
+      account_number: accountNumber,
+      fund_account: {
+        account_type: 'bank_account',
+        account_number: accountNumber,
+        bank_code: ifscCode,
+        name: 'Recipient Name', // Replace with recipient's name
+        email: 'recipient@email.com', // Replace with recipient's email
+        contact: '+919876543210', // Replace with recipient's phone number
+        description: 'Transfer for services', // Description of transfer
+        amount: amount * 100, // Amount in paisa
+        currency: 'INR'
+      }
+    });
+
+    console.log('Bank transfer initiated successfully:', transferResponse);
+
+    // Return success response to client
+    res.status(200).json({ message: 'Bank transfer initiated successfully' });
+  } catch (error) {
+    console.error('Error initiating bank transfer:', error);
+    res.status(500).json({ error: 'Error initiating bank transfer' });
+  }
+});
+
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
+});
+
+
+
+
+
+import React, { useState } from 'react';
+
+const BankTransferForm = () => {
+  const [amount, setAmount] = useState('');
+  const [accountNumber, setAccountNumber] = useState('');
+  const [ifscCode, setIfscCode] = useState('');
+
+  const handleTransfer = async () => {
+    // Assuming you have a server-side endpoint '/process-bank-transfer' that handles the transfer
+    const response = await fetch('/process-bank-transfer', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        amount,
+        accountNumber,
+        ifscCode,
+        // Add any additional data needed for your backend processing
+      }),
+    });
+
+    if (response.ok) {
+      // Handle success, e.g., show a success message to the user
+      console.log('Payment successful!');
+    } else {
+      // Handle errors, e.g., show an error message to the user
+      console.error('Payment failed');
+    }
+  };
+
+  return (
+    <div>
+      <h2>Bank Transfer Form</h2>
+      <label>
+        Amount (INR):
+        <input type="text" value={amount} onChange={(e) => setAmount(e.target.value)} />
+      </label>
+      <br />
+      <label>
+        Account Number:
+        <input type="text" value={accountNumber} onChange={(e) => setAccountNumber(e.target.value)} />
+      </label>
+      <br />
+      <label>
+        IFSC Code:
+        <input type="text" value={ifscCode} onChange={(e) => setIfscCode(e.target.value)} />
+      </label>
+      <br />
+      <button onClick={handleTransfer}>Initiate Transfer</button>
+    </div>
+  );
+};
+
+export default BankTransferForm;
+
+
+
+
+
+
+import React from 'react';
+
+const BankTransferLink = () => {
+  const bankTransferUrl = `https://www.yourbank.com/online-banking?accountNumber=YOUR_ACCOUNT_NUMBER&ifscCode=YOUR_IFSC_CODE&amount=500`;
+
+  return (
+    <div>
+      <h2>Bank Transfer Instructions</h2>
+      <p>Please click the link below to initiate a bank transfer:</p>
+      <a href={bankTransferUrl} target="_blank" rel="noopener noreferrer">Initiate Bank Transfer</a>
+    </div>
+  );
+};
+
+export default BankTransferLink;

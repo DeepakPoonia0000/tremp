@@ -3,34 +3,22 @@ import Announcements from "./components/Announcements";
 import Fotter from "./components/Fotter";
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
-import WhatsApp from "./assets/images/png/icons8-whatsapp-50.png";
-
+import "./app.css";
 import { Link } from "react-router-dom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import WhatsAppLink from "./components/WhatsAppLink";
+import HomePage from "./components/HomePage";
+import Men from "./components/Men";
 
 function App() {
-  const phoneNumber = "7357177777";
-  const message = "Hello!";
-  const amount = 500;
-  const upiId = "9466441441@axl";
-
   return (
     <div className="App" style={{ textAlign: "center" }}>
       <Announcements />
       <NavBar />
-      <Hero />
-      <Link to="/allProducts">
-        <button className="shop-btn">Shop Now</button>
-      </Link>
-      <WhatsAppLink
-        phoneNumber={phoneNumber}
-        message={message}
-        amount={amount}
-        upiId={upiId}
-      />
       <Routes>
+        <Route path="/" element={<HomePage />} />
         <Route path="/allProducts" element={<AllProducts />} />
+        <Route path="/men" element={<Men />} />
       </Routes>
       <Fotter />
     </div>

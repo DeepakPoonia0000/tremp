@@ -1,5 +1,7 @@
 import image1 from "../assets/images/jpg/trempone.jpg";
 import image2 from "../assets/images/jpg/tremptwo.jpg";
+import men1 from "../assets/images/webp/men1.webp";
+
 export const productListData = [
   {
     name: "jeans",
@@ -82,5 +84,63 @@ export const productListData = [
         price: 480.8,
       },
     ],
+  },
+];
+
+export const Mendata = [
+  {
+    img: image1,
+    price: "1200 RS",
+    des: "Men jean",
+  },
+  {
+    img: image2,
+    price: "1100 RS",
+    des: "Men jean",
+  },
+  {
+    img: men1,
+    price: "1250 RS",
+    des: "Men jean",
+  },
+  {
+    img: image1,
+    price: "1200 RS",
+    des: "Men jean",
+  },
+  {
+    img: men1,
+    price: "1250 RS",
+    des: "Men jean",
+  },
+  {
+    img: image1,
+    price: "1200 RS",
+    des: "Men jean",
+  },
+  {
+    img: image2,
+    price: "1100 RS",
+    des: "Men jean",
+  },
+  {
+    img: image1,
+    price: "1200 RS",
+    des: "Men jean",
+  },
+  {
+    img: image2,
+    price: "1100 RS",
+    des: "Men jean",
+  },
+  {
+    img: image1,
+    price: "1100 RS",
+    des: "Men jean",
+  },
+  {
+    img: men1,
+    price: "1250 RS",
+    des: "Men jean",
   },
 ];
