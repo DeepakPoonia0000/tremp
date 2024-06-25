@@ -49,7 +49,7 @@ const Fotter = () => {
                     </div>
                     <ul className={`footer-list ${openSection === 'getHelp' ? 'open' : ''}`}>
                         
-                        <Link to="/privacyolicy"><li>Privacy Policy</li></Link>
+                        <Link to="/privacyolicy"><li>Privacy Policy</li></Link> 
                         <Link to="/termsandconditions"><li>Terms of Service</li></Link>
                     </ul>
                 </div>
