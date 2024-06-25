@@ -32,7 +32,7 @@ const NavBar = () => {
           />
         </div>
         <div className="company">
-          <span className="zoom-out"><img src={Logo} alt="Logo" /></span>
+          <span className="zoom-out"><img src={Logo} alt="Logo" className="zoom-out"/></span>
         </div>
         <div className="options" style={{ color: "white" }}>
           <svg

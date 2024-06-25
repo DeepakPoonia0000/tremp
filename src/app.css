@@ -153,18 +153,13 @@ li:hover {
   }
   to {
     transform: scale(1);
-    /* Zoom in by 20% */
   }
 }
 
-.zoom-out img {
+.zoom-out{
   width: 50px;
   animation: zoomOut 2s ease-out linear;
 }
-
-/* .zoom-out img {
-  width: 50px;
-} */
 
 .navLinks:active {
   color: black;
