@@ -94,6 +94,14 @@ body {
   cursor: pointer;
 }
 
+.clothing_img {
+  border-radius: 20px;
+  transition: all .3s linear;
+}
+
+.clothing_img:hover {
+  transform: scale(1.05);
+}
 
 .navlink:hover {
   background-color: rgb(0, 0, 0, 0.04);
