@@ -34,6 +34,7 @@ const NavBar = () => {
         <div className="company">
           <span className="zoom-out"><img src={Logo} alt="Logo" className="zoom-out"/></span>
         </div>
+        
         <div className="options" style={{ color: "white" }}>
           <svg
             className="icon icon-cart-empty cursor_pointer"
