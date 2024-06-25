@@ -3,7 +3,6 @@
 }
 
 .navBar {
-
   height: 55px;
   display: flex;
   justify-content: space-between;
@@ -11,7 +10,6 @@
 }
 
 .navIcons {
-
   height: 2rem;
   width: 2rem;
   margin: 10px 0px 0px 10px
@@ -23,16 +21,18 @@
   width: 100%;
 }
 
-.navbar {
+.text_start {
+  text-align: start !important;
+}
+
+.navbarrr {
   position: absolute;
   height: calc(100vh - 95px);
   width: 100%;
   overflow: hidden;
   transform: translateX(-100%);
-
   background-color: white;
   transition: transform 0.3s ease;
-  /* Start off-screen initially */
   border: 0px 2px 0px 0px;
 
   @media (min-width:425px) {
@@ -41,7 +41,7 @@
   }
 }
 
-.navbar.open {
+.navbarrr.open {
   transform: translateX(0);
 }
 
@@ -54,7 +54,7 @@
   cursor: pointer;
 }
 
-ul {
+/* ul {
   list-style-type: none;
   padding: 0;
   margin: 20px 0;
@@ -64,14 +64,25 @@ li {
   padding: 10px;
   color: black;
   cursor: pointer;
-}
+} */
 
-li:hover {
+.navlink:hover {
   background-color: rgb(0, 0, 0, 0.04);
 }
 
-.company{
+.company {
   font-size: xxx-large;
+}
+
+.cursor_pointer {
+  cursor: pointer;
+}
+
+.trans_03 {
+  transition: .3s linear !important;
+}
+.icon_hover:hover{
+  transform: scale(1.1);
 }
 
 @keyframes zoomOut {
@@ -80,11 +91,12 @@ li:hover {
     opacity: 0;
     font-size: 300px;
   }
+
   100% {
     transform: scale(1);
     opacity: 1;
     font-size: xxx-large;
-    
+
   }
 }
 

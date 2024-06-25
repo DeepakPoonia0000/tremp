@@ -1,6 +1,16 @@
-body{
-  margin: 0px;
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none !important;
 }
-.abc{
-  background: red;
+
+html,
+body {
+  text-decoration: none !important;
+  font-family: "gilroy-regular", sans-serif;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
 }

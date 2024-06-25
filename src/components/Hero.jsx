@@ -1,12 +1,10 @@
 import React from 'react';
-import firstImage from '../assets/firstImage.webp'
-import firstImage1 from '../assets/firstImage1.webp'
-import secondImage from '../assets/secondImage.webp'
-import joggers from '../assets/joggers.webp'
-import jeans from '../assets/men_jeans.webp'
-
+import firstImage from '../assets/images/webp/firstImage.webp'
+import firstImage1 from "../assets/images/webp/firstImage1.webp";
+import secondImage from "../assets/images/webp/secondImage.webp";
+import joggers from "../assets/images/webp/joggers.webp";
+import jeans from "../assets/images/webp/men_jeans.webp";
 import '../Styles/hero.css'
-
 const Hero = () => {
   return (
    <>
