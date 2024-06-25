@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 // import '../Styles/Footer.css';
 
 const Fotter = () => {
@@ -9,11 +10,11 @@ const Fotter = () => {
     };
 
     return (
-        <div style={{ width: "100%", display: "flex", justifyContent: "center" , overflow:"hidden"}}>
-            <div className="footer">
-                <div className="footer-section" onClick={() => toggleSection('account')}>
+        <div   style={{ width: "100%", display: "flex", justifyContent: "center" , overflow:"hidden"}}>
+            <div className="footer ">
+                <div className="footer-section align-items-sm-center " onClick={() => toggleSection('account')}>
                     <div style={{ width: "100%", display: "flex", justifyContent: "space-between" }} >
-                        <h4 >Account</h4>
+                        <h4 className=' mx-sm-auto' >Account</h4>
                         <div className='dnone'>{
                             openSection === 'account' ? '-' : '+'
                         }
@@ -25,9 +26,9 @@ const Fotter = () => {
                     </ul>
 
                 </div>
-                <div className="footer-section" onClick={() => toggleSection('company')}>
+                <div className="footer-section align-items-sm-center" onClick={() => toggleSection('company')}>
                 <div style={{ width: "100%", display: "flex", justifyContent: "space-between" }} >
-                        <h4 >Account</h4>
+                        <h4 className='mx-sm-auto' >Company</h4>
                         <div className='dnone'>{
                             openSection === 'account' ? '-' : '+'
                         }
@@ -38,24 +39,23 @@ const Fotter = () => {
                         <li>Bulk Orders</li>
                     </ul>
                 </div>
-                <div className="footer-section" onClick={() => toggleSection('getHelp')}>
+                <div className="footer-section align-items-sm-center" onClick={() => toggleSection('getHelp')}>
                 <div style={{ width: "100%", display: "flex", justifyContent: "space-between" }} >
-                        <h4 >Account</h4>
+                        <h4 className='mx-sm-auto' >Get Help</h4>
                         <div className='dnone'>{
                             openSection === 'account' ? '-' : '+'
                         }
                         </div>
                     </div>
                     <ul className={`footer-list ${openSection === 'getHelp' ? 'open' : ''}`}>
-                        <li>Return Policy</li>
-                        <li>Privacy Policy</li>
-                        <li>Terms of Service</li>
-                        <li>Refund Policy</li>
+                        
+                        <Link to="/privacyolicy"><li>Privacy Policy</li></Link>
+                        <Link to="/termsandconditions"><li>Terms of Service</li></Link>
                     </ul>
                 </div>
-                <div className="footer-section" onClick={() => toggleSection('connect')}>
+                <div className="footer-section  align-items-sm-center" onClick={() => toggleSection('connect')}>
                 <div style={{ width: "100%", display: "flex", justifyContent: "space-between" }} >
-                        <h4 >Account</h4>
+                        <h4  className='mx-sm-auto'>Connect</h4>
                         <div className='dnone'>{
                             openSection === 'account' ? '-' : '+'
                         }

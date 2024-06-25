@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
+import Logo from '../assets/CompanyImage/Logo.png'
+
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,8 +23,8 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className="navBar">
-        <div style={{ height: "66px" }}>
+      <div className="navBar align-items-center">
+        <div style={{ height: "55px" }}>
           <FontAwesomeIcon
             icon={isOpen ? faXmark : faBars}
             className="navIcons cursor_pointer trans_03"
@@ -30,7 +32,7 @@ const NavBar = () => {
           />
         </div>
         <div className="company">
-          <span className="zoom-out">TREMP</span>
+          <span className="zoom-out"><img src={Logo} alt="Logo" /></span>
         </div>
         <div className="options" style={{ color: "white" }}>
           <svg
@@ -50,16 +52,16 @@ const NavBar = () => {
           </svg>
         </div>
       </div>
-      <div className={`navbarrr  ${isOpen ? "open" : ""}`}>
-        <ul className="ps-0 mb-0 text_start">
-          <li className="navlink ps-3 py-3 ">Home</li>
-          <li className="ps-3 py-3   navlink">
-            <Link onClick={closeNav} className="text-black d-block" to="/men">
+      <div className={`navbarrr ${isOpen ? 'open' : ''}`} style={{}}>
+        <ul className='navLinks'>
+          <li><Link onClick={closeNav} to="/" className='text-black d-block text-start'>Home</Link></li>
+        <li>  <Link onClick={closeNav} className="text-black d-block text-start" to="/men">
               Men
             </Link>
           </li>
-          <li className=" ps-3 py-3 navlink">Women</li>
-          <li className=" ps-3 py-3 navlink">Sale</li>
+          <li><Link onClick={closeNav} to="/women" className='text-black d-block text-start'>Women</Link></li>
+          <li><Link onClick={closeNav} to="/children" className='text-black d-block text-start'>Children</Link></li>
+          <li><Link onClick={closeNav} to="/allProducts" className='text-black d-block text-start'>All Products</Link></li>
         </ul>
         <div
           className="links pos-bottom"
