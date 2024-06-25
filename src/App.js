@@ -5,118 +5,28 @@ import Hero from './components/Hero';
 import NavBar from './components/NavBar';
 import './app.css'
 
-import image1 from './assets/productImages/trempone.jpg'
-import image2 from './assets/productImages/tremptwo.jpg'
-import image3 from './assets/productImages/trempthree.jpg'
-
-import { Link } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
 import WhatsAppLink from './components/WhatsAppLink';
+import TermsAndServices from './components/Footer/TermsAndServices';
+import PrivacyPolicy from './components/Footer/PrivacyPolicy';
 
 function App() {
-  const productList = [
-    {
-      name: 'jeans',
-      items: [
-        {
-          name: 'Casual jeans',
-          description: 'Comfortable and stylish jeans for everyday wear.',
-          image: image1,
-          price: 380.80
-        },
-        {
-          name: 'Sport jeans',
-          description: 'Perfect jeans for sports and fitness activities.',
-          image: image2,
-          price: 480.80
-        },
-        {
-          name: 'Sport jeans',
-          description: 'Perfect jeans for sports and fitness activities.',
-          image: image2,
-          price: 480.80
-        },
-        {
-          name: 'Casual jeans',
-          description: 'Comfortable and stylish jeans for everyday wear.',
-          image: image1,
-          price: 380.80
-        },
-        {
-          name: 'Sport jeans',
-          description: 'Perfect jeans for sports and fitness activities.',
-          image: image2,
-          price: 480.80
-        },
-        {
-          name: 'Sport jeans',
-          description: 'Perfect jeans for sports and fitness activities.',
-          image: image2,
-          price: 480.80
-        }
-      ]
-    },
-    {
-      name: 'Everyday Jeans',
-      items: [
-        {
-          name: 'Skinny Fit Jeans',
-          description: 'Trendy skinny fit jeans with a snug fit.',
-          image: image1,
-          price: 580.80
-        },
-        {
-          name: 'High Waist Jeans',
-          description: 'High waist jeans with a flattering fit.',
-          image: image2,
-          price: 680.80
-        },
-        {
-          name: 'Sport jeans',
-          description: 'Perfect jeans for sports and fitness activities.',
-          image: image2,
-          price: 480.80
-        },
-        {
-          name: 'Skinny Fit Jeans',
-          description: 'Trendy skinny fit jeans with a snug fit.',
-          image: image1,
-          price: 580.80
-        },
-        {
-          name: 'High Waist Jeans',
-          description: 'High waist jeans with a flattering fit.',
-          image: image2,
-          price: 680.80
-        },
-        {
-          name: 'Sport jeans',
-          description: 'Perfect jeans for sports and fitness activities.',
-          image: image2,
-          price: 480.80
-        }
-      ]
-    }
-  ];
 
-  const phoneNumber = '7357177777'; 
-  const message = 'Hello!';
-  const amount = 500;
-  const upiId = '9466441441@axl';
+  
+  
   
   return (
     <div className="App" style={{textAlign:"center"}}>
    
         <Announcements />
         <NavBar />
-        <Hero />
-        <Link to="/allProducts"><button className='shop-btn'>Shop Now</button></Link>
-        <WhatsAppLink phoneNumber={phoneNumber} message={message} amount={amount} upiId={upiId}/>
         <Routes>
-          <Route path="/allProducts" element={<AllProducts productList={productList} />} />
+        <Route path="/allProducts" element={<AllProducts/>} />
+        <Route path="/" element={<Hero />} />
+        <Route path="/privacyolicy" element={<PrivacyPolicy />} />
+        <Route path="/termsandconditions" element={<TermsAndServices />} />
         </Routes>
-        <Fotter />
-    
+
     </div>
   );
 }

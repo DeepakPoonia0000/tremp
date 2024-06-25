@@ -1,7 +1,10 @@
 import React from 'react';
+import Fotter from './Fotter';
+import WhatsAppLink from './WhatsAppLink';
 
 const AllProducts = ({ productList }) => {
         return (
+          <>
           <div className="all-products">
             {productList.map((category, index) => (
               <div key={index} className="category">
@@ -20,6 +23,8 @@ const AllProducts = ({ productList }) => {
               </div>
             ))}
           </div>
+          <Fotter/>
+          </>
         );
       };
       

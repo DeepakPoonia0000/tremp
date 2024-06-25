@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
 
+import Logo from '../assets/CompanyImage/Logo.png'
+
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -22,7 +24,9 @@ const NavBar = () => {
           />
         </div>
         <div className='company'>
-          <span className='zoom-out'>TREMP</span>
+          <span className="zoom-out">
+            <img src={Logo} alt="Logo" />
+          </span>
         </div>
         <div className='options' style={{ color: "white" }}>
           <svg className="icon icon-cart-empty" style={{ width: "3rem" }} aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
@@ -31,11 +35,12 @@ const NavBar = () => {
         </div>
       </div>
       <div className={`navbar ${isOpen ? 'open' : ''}`} style={{}}>
-        <ul>
-          <li>Home</li>
-        <Link to="/men" >Men</Link>
-          <li>Women</li>
-          <li>Children</li>
+        <ul className='navLinks'>
+          <li><Link to="/" className='navLinks'>Home</Link></li>
+          <li><Link to="/men" className='navLinks'>Men</Link></li>
+          <li><Link to="/women" className='navLinks'>Women</Link></li>
+          <li><Link to="/children" className='navLinks'>Children</Link></li>
+          <li><Link to="/allProducts" className='navLinks'>All Products</Link></li>
         </ul>
         <div className="links pos-bottom" style={{ background: "rgba(0, 0, 0, 0.04)", padding: "20px 0px 20px 20px" }}>
           <div style={{ display: "flex", gap: "10px", marginBottom: "20px" }}>

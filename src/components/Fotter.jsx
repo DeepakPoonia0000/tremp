@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 // import '../Styles/Footer.css';
 
 const Fotter = () => {
@@ -27,7 +28,7 @@ const Fotter = () => {
                 </div>
                 <div className="footer-section" onClick={() => toggleSection('company')}>
                 <div style={{ width: "100%", display: "flex", justifyContent: "space-between" }} >
-                        <h4 >Account</h4>
+                        <h4 >Company</h4>
                         <div className='dnone'>{
                             openSection === 'account' ? '-' : '+'
                         }
@@ -40,22 +41,21 @@ const Fotter = () => {
                 </div>
                 <div className="footer-section" onClick={() => toggleSection('getHelp')}>
                 <div style={{ width: "100%", display: "flex", justifyContent: "space-between" }} >
-                        <h4 >Account</h4>
+                        <h4 >Get Help</h4>
                         <div className='dnone'>{
                             openSection === 'account' ? '-' : '+'
                         }
                         </div>
                     </div>
                     <ul className={`footer-list ${openSection === 'getHelp' ? 'open' : ''}`}>
-                        <li>Return Policy</li>
-                        <li>Privacy Policy</li>
-                        <li>Terms of Service</li>
-                        <li>Refund Policy</li>
+                        
+                        <Link to="/privacyolicy"><li>Privacy Policy</li></Link>
+                        <Link to="/termsandconditions"><li>Terms of Service</li></Link>
                     </ul>
                 </div>
                 <div className="footer-section" onClick={() => toggleSection('connect')}>
                 <div style={{ width: "100%", display: "flex", justifyContent: "space-between" }} >
-                        <h4 >Account</h4>
+                        <h4 >Connect</h4>
                         <div className='dnone'>{
                             openSection === 'account' ? '-' : '+'
                         }
