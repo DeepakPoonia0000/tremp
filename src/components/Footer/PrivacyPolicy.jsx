@@ -68,7 +68,7 @@ const PrivacyPolicy = () => {
                    </div>
             </div>
         </div>
-        <Fotter/>
+        
         </>
     )
 }

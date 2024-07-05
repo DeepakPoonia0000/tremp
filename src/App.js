@@ -11,6 +11,9 @@ import TermsAndServices from "./components/Footer/TermsAndServices";
 import Women from "./components/men-wom-chil/Women";
 import Hero from "./components/Hero";
 import Fotter from "./components/nav-ann-fotr/Fotter";
+import Children from "./components/men-wom-chil/Children";
+
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [selectedDivision, setSelectedDivision] = useState("");
@@ -21,14 +24,14 @@ function App() {
         <Announcements />
         <NavBar setSelectedDivision={setSelectedDivision} />
       </div>
-      
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Hero />} />
 
         <Route path="/allProducts" element={<AllProducts />} />
         <Route path="/men" element={<Men selectedDivision={selectedDivision} />} />
         <Route path="/women" element={<Women selectedDivision={selectedDivision} />} />
-        {/* <Route path="/children" element={<Childrenn />} /> */}
+        <Route path="/children" element={<Children selectedDivision={selectedDivision} />} />
         <Route path="/privacyolicy" element={<PrivacyPolicy />} />
         <Route path="/termsandconditions" element={<TermsAndServices />} />
       </Routes>

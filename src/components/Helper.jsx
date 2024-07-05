@@ -139,6 +139,67 @@ export const productListData = [
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164780/ex8cylthl3ipqt6nduzi.jpg'
         ]
       },
+      {
+        category: 'women',
+        division: '1',
+        name: 'No products to show',
+        description: 'Will be available soon',
+        // mrp: 'Rs. 00',
+        price: 'Rs. 00',
+        images: [
+          'Nothing here'
+        ]
+      },{
+        category: 'women',
+        division: '2',
+        name: 'No products to show',
+        description: 'Will be available soon',
+        // mrp: 'Rs. 00',
+        price: 'Rs. 00',
+        images: [
+          'Nothing here'
+        ]
+      },{
+        category: 'women',
+        division: '3',
+        name: 'No products to show',
+        description: 'Will be available soon',
+        // mrp: 'Rs. 00',
+        price: 'Rs. 00',
+        images: [
+          'Nothing here'
+        ]
+      },{
+        category: 'children',
+        division: '3',
+        name: 'No products to show',
+        description: 'Will be available soon',
+        // mrp: 'Rs. 00',
+        price: 'Rs. 00',
+        images: [
+          'Nothing here'
+        ]
+      },{
+        category: 'children',
+        division: '2',
+        name: 'No products to show',
+        description: 'Will be available soon',
+        // mrp: 'Rs. 00',
+        price: 'Rs. 00',
+        images: [
+          'Nothing here'
+        ]
+      },{
+        category: 'children',
+        division: '1',
+        name: 'No products to show',
+        description: 'Will be available soon',
+        // mrp: 'Rs. 00',
+        price: 'Rs. 00',
+        images: [
+          'Nothing here'
+        ]
+      },
     ],
   },
 ];

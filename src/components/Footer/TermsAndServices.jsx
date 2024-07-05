@@ -3,6 +3,9 @@ import './Termsandservices.css';
 import Fotter from '../nav-ann-fotr/Fotter';
 
 const TermsAndServices = () => {
+    const abc = ()=>{
+        
+    }
     return (
         <>
         <div className="terms-container">
@@ -101,7 +104,7 @@ const TermsAndServices = () => {
                 </div>
             </div>
         </div>
-            <Fotter/>
+            
         </>
     );
 };
