@@ -4,7 +4,7 @@ import { Carousel } from 'react-bootstrap';
 
 const Women = ({ selectedDivision }) => {
   return (
-    <div className="container text-center pb-5 z-n1">
+    <div className="container text-center pb-5 ">
       <h2 className="men_text pt-4 pt-sm-5">Women Clothing</h2>
       <div className="row justify-content-center w-100 flex-lg-row">
         {

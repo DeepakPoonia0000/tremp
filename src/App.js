@@ -17,10 +17,11 @@ function App() {
 
   return (
     <div className="App" style={{ textAlign: "center" }}>
-
-      <Announcements />
-      <NavBar setSelectedDivision={setSelectedDivision} />
-
+      <div className="z-3">
+        <Announcements />
+        <NavBar setSelectedDivision={setSelectedDivision} />
+      </div>
+      
       <Routes>
         <Route path="/" element={<Hero />} />
 
@@ -32,7 +33,7 @@ function App() {
         <Route path="/termsandconditions" element={<TermsAndServices />} />
       </Routes>
       
-        <Fotter />
+      <Fotter />
     </div>
   );
 }

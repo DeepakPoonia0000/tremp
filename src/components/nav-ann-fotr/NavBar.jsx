@@ -65,7 +65,7 @@ const NavBar = ({ setSelectedDivision }) => {
           </svg>
         </div>
       </div>
-      <div className={`navbarrr ${isOpen ? 'open' : ''}`}>
+      <div className={`navbarrr ${isOpen ? 'open' : ''}`} style={{zIndex:"3"}}>
           <ul className="navLinks">
             <li>
               <Link to="/" className="text-black d-block text-start mb-3" onClick={() => closeNavAndSubMenu(setIsOpenMen, '', '')}>
