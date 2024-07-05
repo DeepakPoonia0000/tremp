@@ -8,7 +8,6 @@ import instaimage1 from '../assets/productImages/footer1.jpg'
 import instaimage2 from '../assets/productImages/footer2.jpg'
 import instaimage3 from '../assets/productImages/footer3.jpg'
 import instaimage4 from '../assets/productImages/footer4.jpg'
-import Fotter from './Fotter';
 import WhatsAppLink from './WhatsAppLink';
 
 const instaFeed = [
@@ -26,7 +25,7 @@ const Hero = () => {
           <img src={firstImage1} alt="" srcset="" className='displ-none' />
           <img src={firstImage} alt="" srcset="" className='displ-vis' />
           <div className="centering " style={{ width: "100%" }}>
-            <Link to="/allProducts" className='navLinks'><button className='shop-btn displ-vis'>Show All Products</button></Link>
+            <Link to="/allProducts" className='navLinks'><button className='shop-btn '>Show All Products</button></Link>
           </div>
           <img src={secondImage} alt="" className='displ-vis' />
         </div>
@@ -34,14 +33,14 @@ const Hero = () => {
           <div className="product-grid">
             {instaFeed.map((product, idx) => (
               <div key={idx} className="product-card">
-                <img src={product} className="product-image1" />
+                <img src={product} className="product-image1" alt='imag not available' />
               </div>
             ))}
           </div>
         </div>
       </div>
       <WhatsAppLink message={message} amount={amount} />
-      <Fotter/>
+      
     </>
   )
 }

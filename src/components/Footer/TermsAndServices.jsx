@@ -1,6 +1,6 @@
 import React from 'react';
 import './Termsandservices.css';
-import Fotter from '../Fotter';
+import Fotter from '../nav-ann-fotr/Fotter';
 
 const TermsAndServices = () => {
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import Fotter from './Fotter';
+import Fotter from './nav-ann-fotr/Fotter';
 import { productListData } from './Helper';
 
 
