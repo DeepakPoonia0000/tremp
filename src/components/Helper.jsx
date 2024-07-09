@@ -3,12 +3,13 @@ export const productListData = [
     name: "jeans",
     items: [
       {
+        id:"001",
         category: 'men',
         division: '1',
-        name: 'Product 1',
+        name: 'Pista Chinos',
         description: 'A beautiful summer dress.',
         mrp: 'Rs. 1100',
-        price: 'Rs. 880',
+        price:  880,
         images: [
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164401/j09tlr7xhiq3kain0lja.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164404/nzulkgfwy6i458ix48k2.jpg',
@@ -16,14 +17,16 @@ export const productListData = [
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164413/mc8gjnftu1s0pj2c2zlp.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164805/ldh9qjkj68nnihfkyaq4.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164401/gtnu8idisvxfjvxy9kno.jpg'
-        ]
+        ],
+        size:[20,22,24,26]
       },{
+        id:"002",
         category: 'men',
         division: '1',
         name: 'Product 1',
         description: 'A beautiful summer dress.',
         mrp: 'Rs. 1100',
-        price: 'Rs. 880',
+        price:  880,
         images: [
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164403/svm4kadbpta4bgvhuek6.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164406/ilwilwgy97potcretiy2.jpg',
@@ -32,14 +35,16 @@ export const productListData = [
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164408/l4v3zdp3rbapcrcwqnww.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164408/cmeyjsnbikbtyb2nfoh8.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164412/drltzecsotgfqzhkhcmy.jpg'
-        ]
+        ],
+        size:[20,22,24,26]
       },{
+        id:"003",
         category: 'men',
         division: '1',
         name: 'Product 1',
         description: 'A beautiful summer dress.',
         mrp: 'Rs. 1100',
-        price: 'Rs. 880',
+        price:  880,
         images: [
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164409/vucitugkqtsi2cxx44h5.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164410/xnrzyy61eoxalhagp8he.jpg',
@@ -48,28 +53,32 @@ export const productListData = [
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164413/m5jqbvjekri7ekv5mw0a.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164413/xahcwplfbe4nczaxll2u.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164437/tbmieungekdbqiq6wv77.jpg'
-        ]
+        ],
+        size:[20,22,24,26]
       },{
+        id:"004",
         category: 'men',
         division: '2',
         name: 'Product 1',
         description: 'A beautiful summer dress.',
         mrp: 'Rs. 1100',
-        price: 'Rs. 880',
+        price:  880,
         images: [
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164450/qaoxozljra2tg2qgkqy6.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164445/tckjqfjmbadiejn67kt3.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164448/inwxw2uco0xlfsstxwgw.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164787/exucmlrpgj7xpdsg44ut.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164802/a8r1rdtukmzqf4ijuqjy.jpg'
-        ]
+        ],
+        size:[20,22,24,26]
       },{
+        id:"005",
         category: 'men',
         division: '2',
         name: 'Product 1',
         description: 'A beautiful summer dress.',
         mrp: 'Rs. 1100',
-        price: 'Rs. 880',
+        price:  880,
         images: [
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164784/fulyywbxh1zezghvytlu.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164762/w7kvfsd08wjhnjbkd3o2.jpg',
@@ -77,14 +86,16 @@ export const productListData = [
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164443/gwcaivdmxxxmqbceztj3.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164804/q30rxqyolsca8tohrq1o.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164448/vwwrsm9mybbuyq1fejb6.jpg'
-        ]
+        ],
+        size:[20,22,24,26]
       },{
+        id:"006",
         category: 'men',
         division: '2',
         name: 'Product 1',
         description: 'A beautiful summer dress.',
         mrp: 'Rs. 1100',
-        price: 'Rs. 880',
+        price:  880,
         images: [
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164448/qedbpoadm8hvlfnll0mm.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164453/jkbhqsqfruxb6ewb3ium.jpg',
@@ -92,14 +103,16 @@ export const productListData = [
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164768/c7lsteri5ijsxv4maxsi.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164789/utetsjnxfwmnctqhkol1.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164797/hv2alpcpbxx97msaitb0.jpg'
-        ]
+        ],
+        size:[20,22,24,26]
       },{
+        id:"007",
         category: 'men',
         division: '3',
         name: 'Product 1',
         description: 'A beautiful summer dress.',
         mrp: 'Rs. 1100',
-        price: 'Rs. 880',
+        price:  880,
         images: [
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164767/ojvso6sb8rerzntdg4iv.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164770/opvy4ywkrksynubotb4h.jpg',
@@ -107,14 +120,16 @@ export const productListData = [
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164772/cvq8dukhkbwvc4d6ee7n.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164773/idcvefl3pxl4nh85ybgs.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164787/ummdjqvxdkqz07risppx.jpg'
-        ]
+        ],
+        size:[20,22,24,26]
       },{
+        id:"008",
         category: 'men',
         division: '3',
         name: 'Product 1',
         description: 'A beautiful summer dress.',
         mrp: 'Rs. 1100',
-        price: 'Rs. 880',
+        price:  880,
         images: [
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164771/o9rryyourzpamjpifsfk.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164775/w0hrvsxno9utfqfzwjnp.jpg',
@@ -122,14 +137,16 @@ export const productListData = [
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164776/ex7aub6xvo9bxow7r88e.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164777/fgsylry2zls4tqe89xtz.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164778/xe23wzykgb6xkhrbfcbs.jpg'
-        ]
+        ],
+        size:[20,22,24,26]
       },{
+        id:"009",
         category: 'men',
         division: '3',
         name: 'Product 1',
         description: 'A beautiful summer dress.',
         mrp: 'Rs. 1100',
-        price: 'Rs. 880',
+        price:  880,
         images: [
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164780/p13wp7zgkec3rdowrzan.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164785/x9he4cel13ykgdfbthre.jpg',
@@ -137,65 +154,72 @@ export const productListData = [
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164781/iiwzuc9pf7klgtdcdpbc.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164780/iwxxfjif2lvmdmg9pthq.jpg',
           'https://res.cloudinary.com/dhdk9yop5/image/upload/v1720164780/ex8cylthl3ipqt6nduzi.jpg'
-        ]
+        ],
+        size:[20,22,24,26]
       },
       {
+        id:"010",
         category: 'women',
         division: '1',
         name: 'No products to show',
         description: 'Will be available soon',
         // mrp: 'Rs. 00',
-        price: 'Rs. 00',
+        price: 0,
         images: [
           'Nothing here'
         ]
       },{
+        id:"011",
         category: 'women',
         division: '2',
         name: 'No products to show',
         description: 'Will be available soon',
         // mrp: 'Rs. 00',
-        price: 'Rs. 00',
+        price: 0,
         images: [
           'Nothing here'
         ]
       },{
+        id:"012",
         category: 'women',
         division: '3',
         name: 'No products to show',
         description: 'Will be available soon',
         // mrp: 'Rs. 00',
-        price: 'Rs. 00',
+        price: 0,
         images: [
           'Nothing here'
         ]
       },{
+        id:"013",
         category: 'children',
         division: '3',
         name: 'No products to show',
         description: 'Will be available soon',
         // mrp: 'Rs. 00',
-        price: 'Rs. 00',
+        price: 0,
         images: [
           'Nothing here'
         ]
       },{
+        id:"014",
         category: 'children',
         division: '2',
         name: 'No products to show',
         description: 'Will be available soon',
         // mrp: 'Rs. 00',
-        price: 'Rs. 00',
+        price: 0,
         images: [
           'Nothing here'
         ]
       },{
+        id:"015",
         category: 'children',
         division: '1',
         name: 'No products to show',
         description: 'Will be available soon',
         // mrp: 'Rs. 00',
-        price: 'Rs. 00',
+        price: 0,
         images: [
           'Nothing here'
         ]

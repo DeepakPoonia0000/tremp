@@ -14,6 +14,7 @@ import Fotter from "./components/nav-ann-fotr/Fotter";
 import Children from "./components/men-wom-chil/Children";
 
 import ScrollToTop from "./components/ScrollToTop";
+import ProductBuyPage from "./components/men-wom-chil/ProductBuyPage";
 
 function App() {
   const [selectedDivision, setSelectedDivision] = useState("");
@@ -27,6 +28,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Hero />} />
+        <Route path="/checkout" element={<ProductBuyPage />} />
 
         <Route path="/allProducts" element={<AllProducts />} />
         <Route path="/men" element={<Men selectedDivision={selectedDivision} />} />

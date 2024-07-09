@@ -1,5 +1,6 @@
 body{
 overflow-x: hidden;
+/* font-family: url('https://cdn.shopify.com/s/files/1/0637/7137/7844/files/GraphikRegular.ttf?v=1711524297'); */
 }
 .all-products {
   padding: 20px;
@@ -33,12 +34,52 @@ overflow-x: hidden;
 }
 
 .product-image1 {
+  
   max-width: 80%;
   height: auto;
   border: 0px solid #ddd;
   margin-bottom: 1px;
   border-radius: 15%;
 }
+
+.product-overlay{
+  width: 80%;
+}
+
+.overlay-items{
+  position: absolute;
+  top: 42%;
+  left: 42%;
+  opacity: 0;
+}
+
+.product-card:hover .overlay-items{
+  opacity: 0.9;
+  
+  
+}
+
+/* .overlay-div{
+  
+
+} */
+
+.product-card:hover .overlay-div{
+  width: 80%;
+    height: 100%;
+    /* border: 7px solid #ddd; */
+    /* margin-bottom: 1px; */
+    border-radius: 15%;
+    position: absolute;
+    left: 10%;
+    top: -1%;
+    opacity: 0.5;
+    background: grey;
+    transition: 0.3s ease-in-out;
+}
+
+
+
 
 .product-price {
   color: black;
@@ -125,3 +166,4 @@ overflow-x: hidden;
 
 
 }
+
