@@ -43,7 +43,6 @@ const Men = ({ selectedDivision }) => {
               ))
           )):
 
-
           productListData.map((category, index) => (
             category.items
               .filter(product => product.category === "men")
@@ -63,7 +62,7 @@ const Men = ({ selectedDivision }) => {
                   </Carousel>
                   {/* <h5>{product.name}</h5> */}
                   <p>{product.description}</p>
-                  <p className="fs-7 m-0 p-0 mt-2" style={{ textDecoration: "line-through" }}>Mrp {product.mrp}</p>
+                  <p className="fs-7 m-0 p-0 mt-2 line-th" style={{ textDecoration: "line-through" }}>Mrp {product.mrp}</p>
                   <p className="fs-5 m-0 p-0 mt-3">Our Price  {product.price}</p>
                   <p className="fs-6 fw-semibold m-0 p-0">{product.description}</p>
                 </div>
@@ -71,9 +70,7 @@ const Men = ({ selectedDivision }) => {
           ))
         }
       </div>
-
     </div>
-
 
   );
 };

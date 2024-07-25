@@ -37,7 +37,7 @@ const AllProducts = () => {
                   </Carousel>
                   <h5>{product.name}</h5>
                   <p>{product.description}</p>
-                  <p className="fs-7 m-0 p-0 mt-2" style={{ textDecoration: "line-through" }}>{product.mrp}</p>
+                  <p className="fs-7 m-0 p-0 mt-2 line-th">{product.mrp}</p>
                   <p className="fs-5 m-0 p-0 mt-3">Rs. {product.price}</p>
                   <p className="fs-6 fw-semibold m-0 p-0">{product.description}</p>
                 </div>
