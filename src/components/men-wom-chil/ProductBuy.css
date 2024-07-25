@@ -74,7 +74,7 @@
 
 .upi-container{
     @media (min-width:426px) {
-        border: none !important;
+        /* border: none !important; */
         width: 38% !important;
     }
 }

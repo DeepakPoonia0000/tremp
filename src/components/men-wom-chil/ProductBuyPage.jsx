@@ -86,7 +86,8 @@ const ProductBuyPage = () => {
                     </select>
                 </div>
             </div>
-            {sizeClicked !== '' && (
+            
+            {sizeClicked !== '' ? (
                 <WhatsAppLink
                     message={[
                         product.name,
@@ -96,7 +97,9 @@ const ProductBuyPage = () => {
                     ]}
                     amount={product.price * quantity}
                 />
-            )}
+            ):
+            <h5 style={{margin:'-45px 0px 50px 0px'}}>Select a size for payment!</h5>
+            }
             </>
     );
 };
