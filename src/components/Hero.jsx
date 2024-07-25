@@ -8,7 +8,7 @@ import instaimage1 from '../assets/productImages/footer1.jpg'
 import instaimage2 from '../assets/productImages/footer2.jpg'
 import instaimage3 from '../assets/productImages/footer3.jpg'
 import instaimage4 from '../assets/productImages/footer4.jpg'
-import WhatsAppLink from './WhatsAppLink';
+// import WhatsAppLink from './WhatsAppLink';
 
 const instaFeed = [
   instaimage1, instaimage2, instaimage3, instaimage4, instaimage1, instaimage2, instaimage3, instaimage4

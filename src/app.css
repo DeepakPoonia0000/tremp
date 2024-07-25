@@ -167,3 +167,6 @@ overflow-x: hidden;
 
 }
 
+.line-th{
+  text-decoration: line-through !important;
+}
