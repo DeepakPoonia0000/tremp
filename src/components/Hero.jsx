@@ -14,8 +14,8 @@ const instaFeed = [
   instaimage1, instaimage2, instaimage3, instaimage4, instaimage1, instaimage2, instaimage3, instaimage4
 ]
 
-const message = 'Hello!';
-const amount = 500;
+// const message = 'Hello!';
+// const amount = 500;
 
 const Hero = () => {
   return (
@@ -48,7 +48,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <WhatsAppLink message={message} amount={amount} />
+      {/* <WhatsAppLink message={message} amount={amount} /> */}
 
     </>
   )
